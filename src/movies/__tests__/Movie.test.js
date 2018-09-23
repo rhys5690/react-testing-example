@@ -5,7 +5,7 @@ import Movie, { POSTER_PATH } from '../Movie';
 
 afterEach(() => {
   cleanup();
-  console.error.mockClear();
+  console.error.mockClear(); // cleans up console error after first test
 });
 
 console.error = jest.fn();
